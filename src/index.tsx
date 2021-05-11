@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Parent from "./props/Parent";
 import GuestList from "./state/GuestList";
 import UserSearch from "./state/UserSearch";
+import EventComponent from "./events/EventComponent";
 const App: React.FC = () => {
   return (
     <div>
@@ -14,6 +15,9 @@ const App: React.FC = () => {
       <GuestList />
       <hr />
       <UserSearch />
+      <hr />
+      <h2>Events</h2>
+      <EventComponent />
     </div>
   );
 };
