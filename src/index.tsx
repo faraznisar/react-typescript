@@ -1,11 +1,19 @@
+import React from "react";
 import ReactDOM from "react-dom";
 
 import Parent from "./props/Parent";
-const App = () => {
+import GuestList from "./state/GuestList";
+import UserSearch from "./state/UserSearch";
+const App: React.FC = () => {
   return (
     <div>
-      <h1>Hello there!</h1>
+      <h2>Props</h2>
       <Parent />
+      <hr />
+      <h2>state</h2>
+      <GuestList />
+      <hr />
+      <UserSearch />
     </div>
   );
 };
